@@ -1,0 +1,252 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11541444
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           Census 1960 Tracts Only Set
+Dataset:          Social Explorer Tables
+Tables:
+
+      1. Total Population
+         Universe:  Total Population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Race (100% Count)
+         Universe:  Total Population
+         Name:      T13
+         Variables:
+            T013_001:   Total Population:
+            T013_002:      White
+            T013_003:      Black
+            T013_004:      Other Race
+
+
+      3. Household Structure
+         Universe:  Married Couples, Population in Households and Group Quarters
+         Name:      T31
+         Variables:
+            T031_001:   Married Couple:
+            T031_002:      With own household
+            T031_003:      With own child under 6 only
+            T031_004:      With own child under 18
+            T031_005:      With husband under 45
+            T031_006:      Husband under 45, child under 18
+            T031_007:   Unrelated individuals (including group quarters Population)
+            T031_008:   Population under 18 (own children)
+            T031_009:   Population under 18, with both parents
+
+
+      4. Household Structure (White Population)
+         Universe:  White: Married Couples, Population in Households and Group Quarters
+         Name:      T32
+         Variables:
+            T032_001:   White Married Couple Families:
+            T032_002:      With own household
+            T032_003:      With own child under 6 only
+            T032_004:      With own child under 18
+            T032_005:      With husband under 45
+            T032_006:      Husband under 45, child under 18
+            T032_007:   White: Unrelated individuals (including group quarters Population)
+            T032_008:   White: Population under 18 (own children)
+            T032_009:   White: Population under 18, with both parents
+
+
+      5. Household Structure (Nonwhite Population)
+         Universe:  Nonwhite: Married Couples, Population in Households and Group Quarters
+         Name:      T33
+         Variables:
+            T033_001:   Nonwhite Married Couples Families:
+            T033_002:      With own household
+            T033_003:      With own child under 6 only
+            T033_004:      With own child under 18
+            T033_005:      With husband under 45
+            T033_006:      Husband under 45, child under 18
+            T033_007:   Nonwhite: Unrelated individuals (including group quarters Population)
+            T033_008:   Nonwhite: Population under 18 (own children)
+            T033_009:   Nonwhite: Population under 18, with both parents
+
+
+      6. Household Income
+         Universe:  Households
+         Name:      T89
+         Variables:
+            T089_001:   Households:
+            T089_002:      Less than $1,000
+            T089_003:      $1,000 - $1,999
+            T089_004:      $2,000 - $2,999
+            T089_005:      $3,000 - $3,999
+            T089_006:      $4,000 - $4,999
+            T089_007:      $5,000 - $5,999
+            T089_008:      $6,000 - $6,999
+            T089_009:      $7,000 - $7,999
+            T089_010:      $8,000 - $8,999
+            T089_011:      $9,000 - $9,999
+            T089_012:      $10,000 - $14,999
+            T089_013:      $15,000 - $24,999
+            T089_014:      $25,000 and over
+
+
+      7. Housing Units
+         Universe:  Housing Units
+         Name:      T105
+         Variables:
+            T105_001:   Housing Units
+
+
+      8. Tenure
+         Universe:  Occupied Housing Units
+         Name:      T111
+         Variables:
+            T111_001:   Total Occupied Units:
+            T111_002:      Owner occupied
+            T111_003:      Renter occupied
+
+
+      9. Occupancy/Vacancy Status And Tenure (From the 100% sample)
+         Universe:  Total Year-Round Housing Units
+         Name:      T116
+         Variables:
+            T116_001:   Total Housing Units:
+            T116_002:      Occupied Housing Units:
+            T116_003:         Owner-occupied:
+            T116_004:            White
+            T116_005:            Nonwhite
+            T116_006:         Renter occupied:
+            T116_007:            White Renter Occupied
+            T116_008:            Nonwhite Renter occupied
+            T116_009:      Vacant:
+            T116_010:         Vacant for rent
+            T116_011:         Vacant for sale
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      Name:           Geography name
+      QName:          Qualified geography name
+      SUMLEV:         Summary Level Code
+      FIPS:           Full FIPS code. Uniquely identifies each tract in the country.
+      State:          State FIPS code
+      tractcd:        Full tract code (prefix, tract and suffix)
+      NHGISST:        NHGIS State code
+      NHGISCTY:       NHGIS County code
+      GISJOIN:        NHGIS Join field
+      GISJoin2:       NHGIS Join field 2
+      DECADE:         dataset year
+      state60:        1960 State code
+      county60:       1960 County code
+      Supp_trc_pcs_count: Number of tract pieces that were aggregated to get this tract
+      SuppFP_1:       Suppression flag 1 (None=0, Full=1, Partial=2)
+      SuppFP_2:       Suppression flag 2 (None=0, Full=1, Partial=2)
+      SuppFP_3:       Suppression flag 3 (None=0, Full=1, Partial=2)
+      SuppFP_4:       Suppression flag 4 (None=0, Full=1, Partial=2)
+      SuppFP_5:       Suppression flag 5 (None=0, Full=1, Partial=2)
+      Supp1:          Suppression 1 count (number of tract pieces with suppression 1)
+      Supp2:          Suppression 2 count (number of tract pieces with suppression 2)
+      Supp3:          Suppression 3 count (number of tract pieces with suppression 3)
+      Supp4:          Suppression 4 count (number of tract pieces with suppression 4)
+      Supp5:          Suppression 5 count (number of tract pieces with suppression 5)
+      T001_001:       Total Population
+      T013_001:       Total Population
+      T013_002:       Total Population: White
+      T013_003:       Total Population: Black
+      T013_004:       Total Population: Other Race
+      T031_001:       Married Couple
+      T031_002:       Married Couple: With own household
+      T031_003:       Married Couple: With own child under 6 only
+      T031_004:       Married Couple: With own child under 18
+      T031_005:       Married Couple: With husband under 45
+      T031_006:       Married Couple: Husband under 45, child under 18
+      T031_007:       Unrelated individuals (including group quarters Population)
+      T031_008:       Population under 18 (own children)
+      T031_009:       Population under 18, with both parents
+      T032_001:       White Married Couple Families
+      T032_002:       White Married Couple Families: With own household
+      T032_003:       White Married Couple Families: With own child under 6 only
+      T032_004:       White Married Couple Families: With own child under 18
+      T032_005:       White Married Couple Families: With husband under 45
+      T032_006:       White Married Couple Families: Husband under 45, child under 18
+      T032_007:       White: Unrelated individuals (including group quarters Population)
+      T032_008:       White: Population under 18 (own children)
+      T032_009:       White: Population under 18, with both parents
+      T033_001:       Nonwhite Married Couples Families
+      T033_002:       Nonwhite Married Couples Families: With own household
+      T033_003:       Nonwhite Married Couples Families: With own child under 6 only
+      T033_004:       Nonwhite Married Couples Families: With own child under 18
+      T033_005:       Nonwhite Married Couples Families: With husband under 45
+      T033_006:       Nonwhite Married Couples Families: Husband under 45, child under 18
+      T033_007:       Nonwhite: Unrelated individuals (including group quarters Population)
+      T033_008:       Nonwhite: Population under 18 (own children)
+      T033_009:       Nonwhite: Population under 18, with both parents
+      T089_001:       Households
+      T089_002:       Households: Less than $1,000
+      T089_003:       Households: $1,000 - $1,999
+      T089_004:       Households: $2,000 - $2,999
+      T089_005:       Households: $3,000 - $3,999
+      T089_006:       Households: $4,000 - $4,999
+      T089_007:       Households: $5,000 - $5,999
+      T089_008:       Households: $6,000 - $6,999
+      T089_009:       Households: $7,000 - $7,999
+      T089_010:       Households: $8,000 - $8,999
+      T089_011:       Households: $9,000 - $9,999
+      T089_012:       Households: $10,000 - $14,999
+      T089_013:       Households: $15,000 - $24,999
+      T089_014:       Households: $25,000 and over
+      T105_001:       Housing Units
+      T111_001:       Total Occupied Units
+      T111_002:       Total Occupied Units: Owner occupied
+      T111_003:       Total Occupied Units: Renter occupied
+      T116_001:       Total Housing Units
+      T116_002:       Total Housing Units: Occupied Housing Units
+      T116_003:       Total Housing Units: Occupied Housing Units: Owner-occupied
+      T116_004:       Total Housing Units: Occupied Housing Units: Owner-occupied: White
+      T116_005:       Total Housing Units: Occupied Housing Units: Owner-occupied: Nonwhite
+      T116_006:       Total Housing Units: Occupied Housing Units: Renter occupied
+      T116_007:       Total Housing Units: Occupied Housing Units: Renter occupied: White Renter Occupied
+      T116_008:       Total Housing Units: Occupied Housing Units: Renter occupied: Nonwhite Renter occupied
+      T116_009:       Total Housing Units: Vacant
+      T116_010:       Total Housing Units: Vacant: Vacant for rent
+      T116_011:       Total Housing Units: Vacant: Vacant for sale
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2017
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11541444
+
+If you have any questions contact info@socialexplorer.com

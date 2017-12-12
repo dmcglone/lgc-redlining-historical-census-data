@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11541486
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           Census 1940 Census Tract, County, State and US
+Dataset:          Social Explorer Tables
+Tables:
+
+      1. Total Population
+         Universe:  Total Population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Race
+         Universe:  Total Population
+         Name:      T9
+         Variables:
+            T009_001:   Total Population
+            T009_002:      White
+            T009_003:      Black
+            T009_004:      Other
+
+
+      3. Housing Units
+         Universe:  Housing Units
+         Name:      T50
+         Variables:
+            T050_001:   Housing Units
+
+
+      4. Occupancy Status
+         Universe:  Housing Units
+         Name:      T51
+         Variables:
+            T051_001:   Housing Units
+            T051_002:      Occupied
+            T051_003:      Vacant:
+            T051_004:         For Sale Or Rent
+            T051_005:         Other Vacant
+
+
+      5. Tenure
+         Universe:  Occupied Housing Units
+         Name:      T56
+         Variables:
+            T056_001:   Occupied Housing Units:
+            T056_002:      Owner Occupied
+            T056_003:      Renter Occupied
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      Name:           Name
+      QName:          Full Name
+      SUMLEV:         Summary Level
+      FIPS:           Federal Information Processing System Code
+      state:          State Code
+      county:         County Code
+      T001_001:       Total Population
+      T009_001:       Total Population
+      T009_002:       White
+      T009_003:       Black
+      T009_004:       Other
+      T050_001:       Housing Units
+      T051_001:       Housing Units
+      T051_002:       Occupied
+      T051_003:       Vacant
+      T051_004:       Vacant: For Sale Or Rent
+      T051_005:       Vacant: Other Vacant
+      T056_001:       Occupied Housing Units
+      T056_002:       Occupied Housing Units: Owner Occupied
+      T056_003:       Occupied Housing Units: Renter Occupied
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2017
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11541486
+
+If you have any questions contact info@socialexplorer.com

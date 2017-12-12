@@ -1,0 +1,219 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11541341
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           Census 1980 on 2010 Geographies
+Dataset:          Social Explorer Tables
+Tables:
+
+      1. Total Population
+         Universe:  Total Population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Race
+         Universe:  Total Population
+         Name:      T12
+         Variables:
+            T012_001:   Total Population:
+            T012_002:      White
+            T012_003:      Black
+            T012_004:      American Indian, Eskimo, and Aleut
+            T012_005:      Asian and Pacific Islander
+            T012_006:      Other
+
+
+      3. Households By Race of Householder
+         Universe:  Households
+         Name:      T19
+         Variables:
+            T019_001:   Households:
+            T019_002:      White
+            T019_003:      Black
+            T019_004:      American Indian, Eskimo, and Aleut
+            T019_005:      Asian and Pacific Islander
+            T019_006:      Other
+
+
+      4. Households By Spanish Status of Householder
+         Universe:  Households
+         Name:      T20
+         Variables:
+            T020_001:   Households:
+            T020_002:      With a Householder Who is of Spanish Origin
+            T020_003:      With a Householder Who is not of Spanish Origin
+
+
+      5. Family Structure
+         Universe:  Households
+         Name:      T22
+         Variables:
+            T022_001:   Households:
+            T022_002:      Married-Couple Family:
+            T022_003:         With Own Children
+            T022_004:         Without Own Children
+            T022_005:      Other Family Households:
+            T022_006:         Male Head, No Wife Present:
+            T022_007:            With Own Children
+            T022_008:            Without Own Children
+            T022_009:         Female Head, No Husband Present:
+            T022_010:            With Own Children
+            T022_011:            Without Own Children
+            T022_012:      Non-Family Households
+
+
+      6. Household Income (In <DollarYear> Dollars)
+         Universe:  Households
+         Name:      T53
+         Variables:
+            T053_001:   Households
+            T053_002:   Less than $2,500
+            T053_003:   $2,500 to $4,999
+            T053_004:   $5,000 to $7,499
+            T053_005:   $7,500 to $9,999
+            T053_006:   $10,000 to $12,499
+            T053_007:   $12,500 to $14,999
+            T053_008:   $15,000 to $17,499
+            T053_009:   $17,500 to $19,999
+            T053_010:   $20,000 to $22,499
+            T053_011:   $22,500 to $24,999
+            T053_012:   $25,000 to $27,499
+            T053_013:   $27,500 to $29,999
+            T053_014:   $30,000 to $34,999
+            T053_015:   $35,000 to $39,999
+            T053_016:   $40,000 to $49,999
+            T053_017:   $50,000 to $74,999
+            T053_018:   $75,000 or more
+
+
+      7. Year-Round Housing Units
+         Universe:  Year-Round Housing units
+         Name:      T65
+         Variables:
+            T065_001:   Year-Round Housing Units
+
+
+      8. Tenure
+         Universe:  Occupied Housing Units
+         Name:      T66
+         Variables:
+            T066_001:   Occupied Housing Units:
+            T066_002:      Owner Occupied
+            T066_003:      Renter Occupied
+
+
+      9. Occupancy Status
+         Universe:  Year-Round Housing Units
+         Name:      T67
+         Variables:
+            T067_001:   Year-Round Housing Units:
+            T067_002:      Occupied
+            T067_003:      Vacant
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      FIPS:           FIPS
+      NAME:           Name of Area
+      QName:          Qualifying Name
+      NATION:         Nation
+      STATE:          State
+      COUNTY:         County
+      CT:             Census Tract
+      T001_001:       Total Population
+      T012_001:       Total Population
+      T012_002:       Total Population: White
+      T012_003:       Total Population: Black
+      T012_004:       Total Population: American Indian, Eskimo, and Aleut
+      T012_005:       Total Population: Asian and Pacific Islander
+      T012_006:       Total Population: Other
+      T019_001:       Households
+      T019_002:       Households: White
+      T019_003:       Households: Black
+      T019_004:       Households: American Indian, Eskimo, and Aleut
+      T019_005:       Households: Asian and Pacific Islander
+      T019_006:       Households: Other
+      T020_001:       Households
+      T020_002:       Households: With a Householder Who is of Spanish Origin
+      T020_003:       Households: With a Householder Who is not of Spanish Origin
+      T022_001:       Households
+      T022_002:       Households: Married-Couple Family
+      T022_003:       Households: Married-Couple Family: With Own Children
+      T022_004:       Households: Married-Couple Family: Without Own Children
+      T022_005:       Households: Other Family Households
+      T022_006:       Households: Other Family Households: Male Head, No Wife Present
+      T022_007:       Households: Other Family Households: Male Head, No Wife Present: With Own Children
+      T022_008:       Households: Other Family Households: Male Head, No Wife Present: Without Own Children
+      T022_009:       Households: Other Family Households: Female Head, No Husband Present
+      T022_010:       Households: Other Family Households: Female Head, No Husband Present: With Own Children
+      T022_011:       Households: Other Family Households: Female Head, No Husband Present: Without Own Children
+      T022_012:       Households: Non-Family Households
+      T053_001:       Households
+      T053_002:       Households: Less than $2,500
+      T053_003:       Households: $2,500 to $4,999
+      T053_004:       Households: $5,000 to $7,499
+      T053_005:       Households: $7,500 to $9,999
+      T053_006:       Households: $10,000 to $12,499
+      T053_007:       Households: $12,500 to $14,999
+      T053_008:       Households: $15,000 to $17,499
+      T053_009:       Households: $17,500 to $19,999
+      T053_010:       Households: $20,000 to $22,499
+      T053_011:       Households: $22,500 to $24,999
+      T053_012:       Households: $25,000 to $27,499
+      T053_013:       Households: $27,500 to $29,999
+      T053_014:       Households: $30,000 to $34,999
+      T053_015:       Households: $35,000 to $39,999
+      T053_016:       Households: $40,000 to $49,999
+      T053_017:       Households: $50,000 to $74,999
+      T053_018:       Households: $75,000 or more
+      T065_001:       Year-Round Housing Units
+      T066_001:       Occupied Housing Units
+      T066_002:       Occupied Housing Units: Owner Occupied
+      T066_003:       Occupied Housing Units: Renter Occupied
+      T067_001:       Year-Round Housing Units
+      T067_002:       Year-Round Housing Units: Occupied
+      T067_003:       Year-Round Housing Units: Vacant
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2017
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11541341
+
+If you have any questions contact info@socialexplorer.com

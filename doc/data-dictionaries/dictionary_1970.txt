@@ -1,0 +1,141 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11541998
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           Census 1970 on 2010 Geographies
+Dataset:          Social Explorer Tables (made from Count 4)
+Tables:
+
+      1. Total Population
+         Universe:  Total Population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Race (Before Substitutions and Allocations)
+         Universe:  Total Population (before substitutions and allocations)
+         Name:      T11
+         Variables:
+            T011_001:   Total Population
+            T011_002:      White
+            T011_003:      Black
+            T011_004:      Other
+
+
+      3. Households by Household Type
+         Universe:  Occupied Households
+         Name:      T12
+         Variables:
+            T012_001:   Total Occupied Households:
+            T012_002:      Husband-Wife Family
+            T012_003:      Other Family:
+            T012_004:         Other Family with Male Head
+            T012_005:         Other Family with Female Head
+            T012_006:      Male Primary Individual
+            T012_007:      Female Primary Individual
+
+
+      4. Average Family Income
+         Universe:  Count of Families
+         Name:      T77
+         Variables:
+            T077_001:   Average Family Income
+
+
+      5. Housing Units
+         Universe:  Housing units
+         Name:      T99
+         Variables:
+            T099_001:   Total Housing Units
+
+
+      6. Tenure
+         Universe:  Occupied Housing Units
+         Name:      T100
+         Variables:
+            T100_001:   Total Occupied:
+            T100_002:      Owner Occupied
+            T100_003:      Renter Occupied
+
+
+      7. Occupancy Status
+         Universe:  Housing units
+         Name:      T101
+         Variables:
+            T101_001:   Total Housing Units:
+            T101_002:      Occupied
+            T101_003:      Vacant
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      FIPS:           FIPS
+      NAME:           Name of Area
+      QName:          Qualifying Name
+      NATION:         Nation
+      STATE:          State
+      COUNTY:         County
+      CT:             Census Tract
+      T001_001:       Total Population
+      T011_001:       Total Population
+      T011_002:       White
+      T011_003:       Black
+      T011_004:       Other
+      T012_001:       Total Occupied Households
+      T012_002:       Total Occupied Households: Husband-Wife Family
+      T012_003:       Total Occupied Households: Other Family
+      T012_004:       Total Occupied Households: Other Family: Other Family with Male Head
+      T012_005:       Total Occupied Households: Other Family: Other Family with Female Head
+      T012_006:       Total Occupied Households: Male Primary Individual
+      T012_007:       Total Occupied Households: Female Primary Individual
+      T077_001:       Average Family Income
+      T099_001:       Total Housing Units
+      T100_001:       Total Occupied
+      T100_002:       Total Occupied: Owner Occupied
+      T100_003:       Total Occupied: Renter Occupied
+      T101_001:       Total Housing Units
+      T101_002:       Total Housing Units: Occupied
+      T101_003:       Total Housing Units: Vacant
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2017
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11541998
+
+If you have any questions contact info@socialexplorer.com

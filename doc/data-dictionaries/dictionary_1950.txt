@@ -1,0 +1,132 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11541464
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           Census 1950 Census Tract Only
+Dataset:          Social Explorer Tables
+Tables:
+
+      1. Total Population
+         Universe:  Total Population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Race
+         Universe:  Total Population
+         Name:      T5
+         Variables:
+            T005_001:   Total Population:
+            T005_002:      White
+            T005_003:      Black
+            T005_004:      Other
+
+
+      3. Median Household Income
+         Universe:  Median Household Income
+         Name:      T23
+         Variables:
+            T023_001:   Median Household Income
+
+
+      4. Households
+         Universe:  Number of Households
+         Name:      T38
+         Variables:
+            T038_001:   Households
+
+
+      5. Housing Units
+         Universe:  Housing Units
+         Name:      T45
+         Variables:
+            T045_001:   Housing Units
+
+
+      6. Occupancy Status
+         Universe:  Housing Units
+         Name:      T46
+         Variables:
+            T046_001:   Housing Units:
+            T046_002:      Occupied Housing Units
+            T046_003:      Vacant Housing Units
+            T046_004:         Nonseasonal, etc
+            T046_005:         Other
+
+
+      7. Tenure
+         Universe:  Occupied Housing Units
+         Name:      T51
+         Variables:
+            T051_001:   Occupied Housing Units:
+            T051_002:      Owner Occupied
+            T051_003:      Renter Occupied
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      Name:           Name
+      QName:          Full Name
+      SUMLEV:         Summary Level
+      FIPS:           Federal Information Processing System Code
+      state:          State Code
+      county:         County Code
+      T001_001:       Total Population
+      T005_001:       Total Population
+      T005_002:       White
+      T005_003:       Black
+      T005_004:       Other
+      T023_001:       Median Household Income
+      T038_001:       Households
+      T045_001:       Housing Units
+      T046_001:       Housing Units
+      T046_002:       Housing Units: Occupied Housing Units
+      T046_003:       Housing Units: Vacant Housing Units
+      T046_004:       Housing Units: Nonseasonal, etc
+      T046_005:       Housing Units: Other
+      T051_001:       Occupied Housing Units
+      T051_002:       Occupied Housing Units: Owner Occupied
+      T051_003:       Occupied Housing Units: Renter Occupied
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2017
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11541464
+
+If you have any questions contact info@socialexplorer.com

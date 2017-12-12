@@ -1,0 +1,66 @@
+2010
+    > in 2010 geographies
+    > Missing:
+        - Median Household Income
+2000
+    > in 2010 geographies
+    > AVERAGE household income in 1999 dollars
+    > Missing:
+        - Nonfamily households
+1990
+    > in 2010 geographies
+    > household income in 1989 dollars
+    > Missing:
+        - Households by Hispanic or Latino
+        - Households White Alone, Not White Alone
+        - Nonfamily households
+1980
+    > in 2010 geographies
+    > household income in 1980 dollars
+    > Households by Hispanic or Latino > 'Households By Spanish Status of Householder'
+    > Nonfamily households derived from 'family structure' table
+    > Housing Units > 'Year-Round Housing Units'
+    > Missing:
+        - Households White Alone, Not White Alone
+1970
+    > in 2010 geographies
+    > unclear what year the MHHI dollars are in (probably 1970)
+    > Median Household Income > 'Family Income'
+    > Race > 'Race (Before Substitutions and Allocations)'
+    > Missing:
+        - Households by Race
+        - Households by` Hispanic or Latino
+        - Households White Alone, Not White Alone
+1960
+    > in 1960 geographies
+    > no Gloucester (NJ) county
+    > Median Household Income > Household Income
+    > Race > 'Race (100% Count)'
+    > Households by Race, Hispanic, White alone > 'Household Structure', 'Household Structure (White Population)', 'Household Structure (Nonwhite Population'
+    > Occupancy > 'Occupancy/Vacancy Status And Tenure (From the 100% sample')
+    > Missing:
+        - Households by Race
+        - Households byt hispanic or Latino
+        - Households White Alone, Not White Alone
+1950
+    > in 1950 geographies
+    > no census tracts for all three counties in NJ
+    > Have just straight 'Households' but not by race, hispanic status or white
+    > Occupancy > 'Occupancy Status'
+    > Missing:
+        - Households by Race
+        - Households by Hispanic or Latino
+        - Households White Alone, Not White Alone
+        - Nonfamily households
+1940
+    > in 1940 geographies
+    > only have tracts from Philadelphia and Camden counties
+    > Missing:
+        - Median Household Income
+        - Households by Race
+        - Households by Hispanic or Latino
+        - Households White Alone, Not White Alone
+        - Nonfamily households
+
+
+

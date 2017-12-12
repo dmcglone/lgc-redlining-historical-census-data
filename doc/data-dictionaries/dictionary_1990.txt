@@ -1,0 +1,159 @@
+--------------------------------------------------------------------------------
+Codebook for Social Explorer report ID: R11541991
+--------------------------------------------------------------------------------
+
+Contents
+    - Table Summary
+    - Data Dictionary
+    - Citation and Use
+
+
+--------------------------------------------------------------------------------
+Table Summary
+--------------------------------------------------------------------------------
+ 
+Survey:           Census 1990 on 2010 Geographies
+Dataset:          Social Explorer Tables
+Tables:
+
+      1. Total Population
+         Universe:  Total Population
+         Name:      T1
+         Variables:
+            T001_001:   Total Population
+
+
+      2. Race
+         Universe:  Persons
+         Name:      T11
+         Variables:
+            T011_001:   Persons:
+            T011_002:      White
+            T011_003:      Black
+            T011_004:      American Indian, Eskimo, or Aleut
+            T011_005:      Asian or Pacific Islander
+            T011_006:      Other race
+
+
+      3. Household Type
+         Universe:  Households
+         Name:      T15
+         Variables:
+            T015_001:   Households:
+            T015_002:      Family households:
+            T015_003:         Married-couple family:
+            T015_004:         Other family:
+            T015_005:            Male householder, no wife present:
+            T015_006:            Female householder, no husband present:
+            T015_007:      Nonfamily households:
+            T015_008:         Male householder
+            T015_009:         Female householder
+
+
+      4. Households by Race Of Householder
+         Universe:  Households
+         Name:      T17
+         Variables:
+            T017_001:   Households:
+            T017_002:      Households With a White Householder
+            T017_003:      Households With a Black Householder
+            T017_004:      Households With a American Indian, Eskimo, or Aleut Householder
+            T017_005:      Households With a Asian or Pacific Islander Householder
+            T017_006:      Households With Other race Householder
+
+
+      5. Housing Units
+         Universe:  Housing units
+         Name:      T52
+         Variables:
+            T052_001:   Housing units
+
+
+      6. Tenure
+         Universe:  Occupied housing units
+         Name:      T53
+         Variables:
+            T053_001:   Occupied housing units:
+            T053_002:      Owner occupied
+            T053_003:      Renter occupied
+
+
+      7. Occupancy Status
+         Universe:  Housing units
+         Name:      T54
+         Variables:
+            T054_001:   Housing units:
+            T054_002:      Occupied
+            T054_003:      Vacant
+
+
+
+
+
+ 
+ 
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      FIPS:           FIPS
+      NAME:           Name of Area
+      QName:          Qualifying Name
+      NATION:         Nation
+      STATE:          State
+      COUNTY:         County
+      CT:             Census Tract
+      T001_001:       Total Population
+      T011_001:       Persons
+      T011_002:       Persons: White
+      T011_003:       Persons: Black
+      T011_004:       Persons: American Indian, Eskimo, or Aleut
+      T011_005:       Persons: Asian or Pacific Islander
+      T011_006:       Persons: Other race
+      T015_001:       Households
+      T015_002:       Households: Family households
+      T015_003:       Households: Family households: Married-couple family
+      T015_004:       Households: Family households: Other family
+      T015_005:       Households: Family households: Other family: Male householder, no wife present
+      T015_006:       Households: Family households: Other family: Female householder, no husband present
+      T015_007:       Households: Nonfamily households
+      T015_008:       Households: Nonfamily households: Male householder
+      T015_009:       Households: Nonfamily households: Female householder
+      T017_001:       Households
+      T017_002:       Households With a White Householder
+      T017_003:       Households With a Black Householder
+      T017_004:       Households With a American Indian, Eskimo, or Aleut Householder
+      T017_005:       Households With a Asian or Pacific Islander Householder
+      T017_006:       Households With Other race Householder
+      T052_001:       Housing units
+      T053_001:       Occupied housing units
+      T053_002:       Occupied housing units: Owner occupied
+      T053_003:       Occupied housing units: Renter occupied
+      T054_001:       Housing units
+      T054_002:       Housing units: Occupied
+      T054_003:       Housing units: Vacant
+
+
+
+
+--------------------------------------------------------------------------------
+Citation and Use of Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing the data
+  must cite it appropriately. The citation should include the following:
+
+	  www.socialexplorer.com
+	  New York City, NY: Social Explorer 2017
+
+
+* Citations should also include the URL for this report:
+
+    http://www.socialexplorer.com/pub/reportdata/HtmlResults.aspx?reportid=R11541991
+
+If you have any questions contact info@socialexplorer.com

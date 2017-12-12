@@ -1,0 +1,36 @@
+Variable type,
+t,total
+c,percent
+,
+p,population
+h,household
+I,median household income
+u,housing units
+g,identifier
+,
+y,year
+id,fips code
+st,state
+cy,county
+,
+n,not
+,
+wh,white
+bl,black
+as,asian
+na,native american
+nh,native hawaiian
+or,other race
+mr,mixed race
+,
+wa,white alone, not hispanic or latino
+hi,hispanic
+nw,not White Alone, or is Hispanic or Latino
+,
+nf,non family
+fm,family
+,
+oc,occupied
+vc,vacant
+ro,renter occupied
+oo,owner occupied
