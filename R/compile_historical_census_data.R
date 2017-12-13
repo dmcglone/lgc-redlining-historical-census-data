@@ -27,7 +27,7 @@ get_one_year <- function(year, variable_table) {
     mutate(g_yr = year)
   keys <- variable_table %>% filter(g_yr == year) %>%  as.list
   
-  dat <- get_base_df(df, keys, 2010)
+  dat <- get_base_df(df, keys, year)
   for (var in names(keys[5:length(keys)])) {
     dat[[var]] <- get_column(var)
   }
