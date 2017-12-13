@@ -1,6 +1,6 @@
 ###########################################################################
 #
-# Project: LGC Redlining
+# Project: Historical Census Data
 #
 # Script purpose: Extract appropriate fields from Social Explorer tables
 #

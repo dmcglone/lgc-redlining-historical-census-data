@@ -1,6 +1,6 @@
 ###########################################################################
 #
-# Project:
+# Project: Historical Census Data
 #
 # Script purpose:
 #
