@@ -5,6 +5,8 @@ This repository contains raw datasets and scripts used to create a set of histor
 
 ### Getting started
 
+This project uses the Azavea Data Analytics team's [Python Project Template](https://github.com/azavea/python-project-template). Before commencing with data analysis, follow the instructions in the `Getting Started` section of the project templates's [documentation](https://github.com/azavea/python-project-template/blob/master/README.md).
+
 The first step is to download the necessary census variables for each year from [Social Explorer](https://www.socialexplorer.com/). 
 
 * Select `Tables` from the top menu bar
@@ -13,11 +15,13 @@ The first step is to download the necessary census variables for each year from 
     - Click `Begin Report` for the year in question
     - Select census tracts by county and include the following counties in PA and NJ: `Philadelphia County, PA`, `Berks County, PA`, `Montgomery County, PA`, `Delaware County, PA`, `Camden County, NJ`, `Burlington County, NJ`, and `Gloucester County, NJ`
     - Locate the data dictionary for the year you are searching for. These text files are located in `data/doc/data-dictionaries/`. 
-    - Select each of the tables listed in this file and download the data as a csv.
-    - Change the name of the csv to `variables_YYYY.csv` and move it to `data/`
+    - Select each of the tables listed in this file and download the data as a csv. Place it in `data/raw`
+    - Copy the csv to `data/organized` and change it's name based on it's year so that it matches the following convention: `variables_YYYY.csv`
 * You will also need the `variable_names.csv` dataset located in `/data`
 
-You are now set up to run `src/compile_historical_census_data.py`
+You are now set up to run the script that generates decennial census tables in a standardized format. From within the home directory of the Docker container run
+
+`src/compile_historical_census_data.py data/organized/variable_names.csv data/organized/ data/interim/`
 
 Note: Not all variables and/or geographies are available for each year
 
