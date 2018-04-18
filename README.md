@@ -17,7 +17,7 @@ The first step is to download the necessary census variables for each year from 
     - Change the name of the csv to `variables_YYYY.csv` and move it to `data/`
 * You will also need the `variable_names.csv` dataset located in `/data`
 
-You are now set up to run `main.R`
+You are now set up to run `src/compile_historical_census_data.py`
 
 Note: Not all variables and/or geographies are available for each year
 
