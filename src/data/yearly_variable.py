@@ -41,37 +41,45 @@ def main(variable):
             f = 'data/organized/spatial/phila_{}_fields.geojson'.format(y[2:])
             tracts_historic = gpd.read_file(f)
             field = 'census_data_{}_{}'.format(y, variable)
-            if field not in tracts_historic.columns:
-                print('Measurement field not found in data table for year {}.'.format(y))
+
+            if len(tracts_historic[tracts_historic[field] != '']) == 0:
+                print('{} not available for year {}.'.format(variable, y))
             else:
-                tracts_historic['Geo_FIPS_historic'] = tracts_historic[
-                    'Geo_FIPS'].astype(str)
-                areas_historic = dict(
-                    zip(tracts_historic['Geo_FIPS_historic'], tracts_historic['geometry'].area))
-                union = gpd.overlay(tracts_2010, tracts_historic, how='union')
-                union = union[(union['Geo_FIPS_2010'].notnull()) & (
-                    union['Geo_FIPS'].str.startswith('42101'))]
-                p = {}
-                for k, v in union.iterrows():
-                    if v['Geo_FIPS_historic'] in areas_historic.keys():
-                        prop_value = v['geometry'].area / \
-                            areas_historic[v['Geo_FIPS_historic']]
-                        prop_key = (v['Geo_FIPS_2010'], v['Geo_FIPS_historic'])
-                        p[prop_key] = prop_value
-                u = pd.DataFrame(
-                    union)[['Geo_FIPS_2010', 'Geo_FIPS_historic', field]]
-                u = u[u[field] != '']
-                if variable.startswith('t'):
-                    u['value'] = u.apply(
-                        lambda x: p[(x[0], x[1])] * int(x[2]), 1)
-                    u = u[['Geo_FIPS_2010', 'value']]
-                    g = u.groupby(['Geo_FIPS_2010']).sum().reset_index()
-                    g.columns = ['Geo_FIPS_2010', variable + '_' + y]
-                    tracts_2010 = pd.merge(tracts_2010, g)
-                    print('Merged data from year {}.'.format(y))
+                if field not in tracts_historic.columns:
+                    print(
+                        'Measurement field not found in data table for year {}.'.format(y))
                 else:
-                    print('Support for rate variables coming soon.')
-                    break
+                    tracts_historic['Geo_FIPS_historic'] = tracts_historic[
+                        'Geo_FIPS'].astype(str)
+                    areas_historic = dict(
+                        zip(tracts_historic['Geo_FIPS_historic'], tracts_historic['geometry'].area))
+                    union = gpd.overlay(
+                        tracts_2010, tracts_historic, how='union')
+                    union = union[(union['Geo_FIPS_2010'].notnull()) & (
+                        union['Geo_FIPS'].str.startswith('42101'))]
+                    p = {}
+                    for k, v in union.iterrows():
+                        if v['Geo_FIPS_historic'] in areas_historic.keys():
+                            prop_value = v['geometry'].area / \
+                                areas_historic[v['Geo_FIPS_historic']]
+                            prop_key = (v['Geo_FIPS_2010'], v[
+                                        'Geo_FIPS_historic'])
+                            p[prop_key] = prop_value
+                    u = pd.DataFrame(
+                        union)[['Geo_FIPS_2010', 'Geo_FIPS_historic', field]]
+                    u = u[u[field] != '']
+                    if variable.startswith('t'):
+                        u['value'] = u.apply(
+                            lambda x: p[(x[0], x[1])] * int(x[2]), 1)
+                        u = u[['Geo_FIPS_2010', 'value']]
+                        g = u.groupby(['Geo_FIPS_2010']
+                                      ).sum().reset_index()
+                        g.columns = ['Geo_FIPS_2010', variable + '_' + y]
+                        tracts_2010 = pd.merge(tracts_2010, g)
+                        print('Merged data from year {}.'.format(y))
+                    else:
+                        print('Support for rate variables coming soon.')
+                        break
 
     tracts_2010 = tracts_2010[tracts_2010['COUNTY'] == '101']
     tract_output = os.path.join(
