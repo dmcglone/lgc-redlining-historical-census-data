@@ -25,7 +25,7 @@ def census_vars_csvs(variable_names_table, yearly_table_directory):
     """
     variable_table = pd.read_csv(variable_names_table, na_filter=False)
     all_dfs = {}
-    years = list(map(lambda x: str(x), np.arange(1940, 2010, 10)))
+    years = list(map(lambda x: str(x), np.arange(1940, 2020, 10)))
     for y in years:
         fname = 'variables_{}.csv'.format(y)
         raw_data = pd.read_csv(os.path.join(yearly_table_directory, fname))
@@ -34,7 +34,7 @@ def census_vars_csvs(variable_names_table, yearly_table_directory):
         key_map = {k: v[0] for k, v in key_map.items()}
         base_columns = [key_map['g_cy'], key_map['g_id'], key_map['g_st']]
         standardized = raw_data[base_columns]
-        standardized.columns = ['g_cy', 'g_id', 'g_id']
+        standardized.columns = ['g_cy', 'Geo_FIPS', 'g_id']
         standardized.insert(loc=0, column='g_yr', value=y)
 
         for key, variable in sorted(key_map.items()):

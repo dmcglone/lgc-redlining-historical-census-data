@@ -21,9 +21,13 @@ The first step is to download the necessary census variables for each year from 
 
 You are now set up to run the script that generates decennial census tables in a standardized format. From within the home directory of the Docker container run
 
-`src/compile_historical_census_data.py data/organized/variable_names.csv data/organized/ data/interim/`
+`python src/data/compile_historical_census_data.py data/organized/variable_names.csv data/organized/ data/interim/`
 
 Note: Not all variables and/or geographies are available for each year
+
+Next, generate a set of lookup tables that associate historical census tracts with contemporary tracts and tracts with neighborhoods. From root project directory run:
+
+`python src/data/generate_tract_lookups.py data/organized/spatial/study_area_2010.geojson data/organized/spatial/ data/organized/spatial/Neighborhoods_Philadelphia.geojson data/interim/historical_tract_lookup.csv`
 
 ### Understanding the output
 
