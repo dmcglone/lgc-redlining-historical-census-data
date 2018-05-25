@@ -29,9 +29,18 @@ Next, generate a set of lookup tables that associate historical census tracts wi
 
 `python src/data/generate_tract_lookups.py data/organized/spatial/study_area_2010.geojson data/organized/spatial/ data/organized/spatial/Neighborhoods_Philadelphia.geojson data/interim/historical_tract_lookup.csv`
 
-### Understanding the output
+This will output a series of shapefiles. All shapefiles will have the same fields. However, for most shapefiles, many fields will be populated with NA values indicating that a variable is not available for that year.
 
-This project will output a series of shapefiles. All shapefiles will have the same fields. However, for most shapefiles, many fields will be populated with NA values indicating that a variable is not available for that year.
+### Yearly Census Variables
+
+For a given census variable, create a geojson of all 2010 tracts in the city of Philadelphia with fields each year of that variable.
+
+`python src/data/yearly_variable.py [variable_code]`
+
+e.g.
+
+`python src/data/yearly_variable.py t_p`
+
 
 ### Variable naming convention
 
