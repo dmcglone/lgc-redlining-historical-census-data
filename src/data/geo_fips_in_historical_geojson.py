@@ -1,11 +1,13 @@
+import os
 import pandas as pd
 import geopandas as gpd
 
-from os.path import join
+from os.path import join, isfile
 
 geojson_dir = 'data/organized/spatial/'
 variables_dir = 'data/organized'
 years = ['40', '50', '60']
+census_data_dir = 'data/interim'
 
 for y in years:
     g_in = join(geojson_dir, 'phila_{}.geojson'.format(y))
@@ -23,14 +25,27 @@ for y in years:
     d = d[['Geo_QName', 'Geo_FIPS']]
 
     def e(s):
-        s = s.split(',')[0].replace('Census Tract ', '')
-        split = len(s)
-        for i in range(0, len(s)):
-            if not s[i].isdigit():
-                split = i
-                return str(int(s[:split])) + '-' + s[split:].replace('0', '')
-        return s
+        if len(s) == 3:
+            return s
+        else:
+            s = s.split(',')[0].replace('Census Tract ', '')
+            split = len(s)
+            for i in range(0, len(s)):
+                if not s[i].isdigit():
+                    split = i
+                    return str(int(s[:split])) + '-' + s[split:].replace('0', '')
+
     d['TRACTID'] = d['Geo_QName'].apply(e)
+    print(g.shape)
     gg = pd.merge(g, d[['Geo_FIPS', 'TRACTID']])
-    g_out = g_in.replace('.geojson', '_with_fips.geojson')
+    census_csv = 'census_data_19{}.csv'.format(y)
+    census_data = pd.read_csv(join(census_data_dir, census_csv))
+    print(gg.shape)
+    gg = pd.merge(gg, census_data, on='Geo_FIPS')
+    g_out = g_in.replace('.geojson', '_fields.geojson')
+
+    if isfile(g_out):
+        os.remove(g_out)
+
     gg.to_file(driver='GeoJSON', filename=g_out)
+    # print(gg.head())

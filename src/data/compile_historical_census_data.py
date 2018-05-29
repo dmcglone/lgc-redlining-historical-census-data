@@ -38,7 +38,7 @@ def census_vars_csvs(variable_names_table, yearly_table_directory):
         standardized.insert(loc=0, column='g_yr', value=y)
 
         for key, variable in sorted(key_map.items()):
-            if key not in ['I'] + list(standardized.columns):
+            if key not in list(standardized.columns):  # + ['I']:
                 if not variable.startswith('Geo'):
                     variable = 'SE_' + variable
                 if key_map[key] != '':
