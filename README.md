@@ -21,13 +21,26 @@ The first step is to download the necessary census variables for each year from 
 
 You are now set up to run the script that generates decennial census tables in a standardized format. From within the home directory of the Docker container run
 
-`src/compile_historical_census_data.py data/organized/variable_names.csv data/organized/ data/interim/`
+`python src/data/compile_historical_census_data.py data/organized/variable_names.csv data/organized/ data/interim/`
 
 Note: Not all variables and/or geographies are available for each year
 
-### Understanding the output
+Next, generate a set of lookup tables that associate historical census tracts with contemporary tracts and tracts with neighborhoods. From root project directory run:
 
-This project will output a series of shapefiles. All shapefiles will have the same fields. However, for most shapefiles, many fields will be populated with NA values indicating that a variable is not available for that year.
+`python src/data/generate_tract_lookups.py data/organized/spatial/study_area_2010.geojson data/organized/spatial/ data/organized/spatial/Neighborhoods_Philadelphia.geojson data/interim/historical_tract_lookup.csv`
+
+This will output a series of shapefiles. All shapefiles will have the same fields. However, for most shapefiles, many fields will be populated with NA values indicating that a variable is not available for that year.
+
+### Yearly Census Variables
+
+For a given census variable, create a geojson of all 2010 tracts in the city of Philadelphia with fields each year of that variable.
+
+`python src/data/yearly_variable.py [variable_code]`
+
+e.g.
+
+`python src/data/yearly_variable.py t_p`
+
 
 ### Variable naming convention
 
