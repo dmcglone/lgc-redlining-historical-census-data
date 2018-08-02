@@ -69,8 +69,14 @@ def main(variable):
                             union)[['Geo_FIPS_2010', 'Geo_FIPS_historic', field]]
                         u = u[u[field].apply(str) != '']
                         if variable.startswith('t'):
-                            u['value'] = u.apply(
-                                lambda x: p[(x[0], x[1])] * int(x[2]), 1)
+
+                            def _get_prop(x):
+                                if not x[2]:
+                                    return 0
+                                else:
+                                    return p[(x[0], x[1])] * int(x[2])
+
+                            u['value'] = u.apply(_get_prop, 1)
                             u = u[['Geo_FIPS_2010', 'value']]
                             g = u.groupby(['Geo_FIPS_2010']
                                           ).sum().reset_index()
